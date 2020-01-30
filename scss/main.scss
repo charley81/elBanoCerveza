@@ -1,3 +1,29 @@
+@import 'config';
+@import 'navbar';
+@import 'utility';
+@import 'sections';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Special Elite', cursive;
+  font-size: 1.1;
+  line-height: 1.5;
+  letter-spacing: 3px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
 }

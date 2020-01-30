@@ -1,0 +1,52 @@
+#section {
+  // section-a: contact
+  &-a {
+    .info {
+      text-align: center;
+
+      .col {
+        background: $dark-color;
+        color: $light-color;
+        padding: 1rem;
+        line-height: 2;
+
+        ul {
+          display: flex;
+          justify-content: center;
+          
+          i {
+            color: $primary-color;
+            font-size: 2rem;
+            padding: 0 0.5rem;
+
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // section-b: brews
+  &-b {
+    .cards {
+      padding: 1rem;
+
+      .card {
+        padding: 1rem;
+        background: $primary-color;
+
+        h3 {
+          font-size: 1.5rem;
+          padding: 1rem 0;
+        }
+
+        img {
+          border-radius: 3px;
+        }
+      }
+    }
+    
+  }
+}

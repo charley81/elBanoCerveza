@@ -1,0 +1,186 @@
+// padding {
+  .p {
+    &-1 {
+      padding: 1rem;
+    }
+    &-2 {
+      padding: 2rem;
+    }
+    &-3 {
+      padding: 3rem;
+    }
+    &-4 {
+      padding: 4rem;
+    }
+  }
+  .py {
+    &-1 {
+      padding: 1rem 0;
+    }
+    &-2 {
+      padding: 2rem 0;
+    }
+    &-3 {
+      padding: 3rem 0;
+    }
+    &-4 {
+      padding: 4rem 0;
+    }
+  }
+  .px {
+    &-1 {
+      padding: 0 1rem;
+    }
+    &-2 {
+      padding: 0 2rem;
+    }
+    &-3 {
+      padding: 0 3rem;
+    }
+    &-4 {
+      padding: 0 4rem;
+    }
+  }
+
+  // margin
+  .m {
+    &-1 {
+      margin: 1rem;
+    }
+    &-2 {
+      margin: 1rem;
+    }
+    &-3 {
+      margin: 1rem;
+    }
+    &-4 {
+      margin: 1rem;
+    }
+  }
+  .my {
+    &-1 {
+      margin: 1rem 0;
+    }
+    &-2 {
+      margin: 1rem 0;
+    }
+    &-3 {
+      margin: 1rem 0;
+    }
+    &-4 {
+      margin: 1rem 0;
+    }
+  }
+  .mx {
+    &-1 {
+      margin: 0 1rem;
+    }
+    &-2 {
+      margin: 0 1rem;
+    }
+    &-3 {
+      margin: 0 1rem;
+    }
+    &-4 {
+      margin: 0 1rem;
+    }
+  }
+
+  // backgrounds
+  .bg {
+    &-primary {
+      background: $primary-color;
+      color: $dark-color;
+    }
+    &-secondary {
+      background: $secondary-color;
+      color: $dark-color;
+    }
+    &-light {
+      background: $light-color;
+      color: $dark-color;
+    }
+    &-dark {
+      background: $dark-color;
+      color: $light-color;
+    }
+  }
+
+  // buttons
+  %btn-shared {
+    display: inline-block;
+    padding: 1rem 4rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn {
+    &-primary {
+      @extend %btn-shared;
+      background: $primary-color;
+      color: $dark-color;
+    }
+    &-secondary {
+      @extend %btn-shared;
+      background: $secondary-color;
+      color: $dark-color;
+    }
+    &-dark {
+      @extend %btn-shared;
+      background: $dark-color;
+      color: $light-color;
+
+      &:hover {
+        background: $light-color;
+        color: $dark-color;
+        border: 1px solid $dark-color;
+      }
+    }
+    &-light {
+      @extend %btn-shared;
+      background: $light-color;
+      color: $dark-color;
+    }
+  }
+
+
+// text
+.text {
+  &-primary {
+    color: $primary-color;
+  }
+  &-center {
+    text-align: center;
+  }
+}
+
+// headings
+%heading-shared {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.3;
+  padding-top: 1rem;
+}
+
+.heading {
+  &-l {
+    @extend %heading-shared;
+    font-size: 4rem;
+  }
+  &-m {
+    @extend %heading-shared;
+    font-size: 2rem;
+  }
+  &-s {
+    @extend %heading-shared;
+    font-size: 1.5rem;
+  }
+}

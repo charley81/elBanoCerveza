@@ -8,15 +8,79 @@
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/69d25c3dbf.js" crossorigin="anonymous"></script>
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
   <!-- local css compiled from sass -->
   <link rel="stylesheet" href="./css/main.min.css">
   <title>Document</title>
 </head>
 
 <body>
-  <!-- testing -->
-  <h1>elBanoCerveza</h1>
+  <!-- navbar -->
+  <nav id="main-navbar">
+    <h1 class="title"><span class="text-primary">el</span>BanoCerveza</h1>
+    <ul>
+      <li><a href="#">Brews</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
+  </nav>
+
+  <!-- section-a: contact -->
+  <section id="section-a">
+    <div class="info">
+      <div class="address col">
+        <p>elBanoCerveza</p>
+        <p>1111 Peachtree St.</p>
+        <p>Atlanta, GA 303303</p>
+      </div>
+      <div class="contact col">
+        <p>555-555-5555</p>
+        <p>contact@elbanocerveza.com</p>
+        <ul>
+          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-github-alt"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-b: brews -->
+  <section id="section-b">
+    <h3 class="heading-m">Our Latest Brews</h3>
+    <div class="cards text-center">
+      <div class="card" data-description="">
+        <img src="./images/beer1.jpg" alt="">
+        <div class="card-text">
+          <h3>atownAle</h3>
+          <button class="btn-dark">learnMore</button>
+        </div>
+      </div>
+      <div class="card" data-description="">
+        <img src="./images/beer7.jpg" alt="">
+        <div class="card-text">
+          <h3>tgifIPA</h3>
+          <button class="btn-dark">learnMore</button>
+        </div>
+      </div>
+      <div class="card" data-description="">
+        <img src="./images/beer8.jpg" alt="">
+        <div class="card-text">
+          <h3>hempLager</h3>
+          <button class="btn-dark">learnMore</button>
+        </div>
+      </div>
+      <div class="card" data-description="">
+        <img src="./images/beer6.jpg" alt="">
+        <div class="card-text">
+          <h3>gripVisen</h3>
+          <button class="btn-dark">learnMore</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- local js file -->
   <script src="./js/index.js"></script>
 </body>
