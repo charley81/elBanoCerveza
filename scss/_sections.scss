@@ -31,12 +31,10 @@
   // section-b: brews
   &-b {
     .cards {
-      padding: 1rem;
-
+      
       .card {
         padding: 1rem;
-        background: $primary-color;
-
+        
         h3 {
           font-size: 1.5rem;
           padding: 1rem 0;
@@ -48,5 +46,20 @@
       }
     }
     
+  }
+
+  // section-d: services
+  &-c{
+    .cards {
+      
+      .card {
+        padding: 1rem;
+        
+        h3 {
+          font-size: 1.5rem;
+          padding: 1rem 0;
+        }
+      }
+    }
   }
 }
