@@ -27,39 +27,28 @@
       }
     }
   }
+}
 
-  // section-b: brews
-  &-b {
-    .cards {
-      
-      .card {
-        padding: 1rem;
-        
-        h3 {
-          font-size: 1.5rem;
-          padding: 1rem 0;
-        }
+// section-b: brews
 
-        img {
-          border-radius: 3px;
-        }
-      }
-    }
+.cards {
     
-  }
-
-  // section-d: services
-  &-c{
-    .cards {
+  .card {
+    padding: 1rem;
       
-      .card {
-        padding: 1rem;
-        
-        h3 {
-          font-size: 1.5rem;
-          padding: 1rem 0;
-        }
-      }
+    h3 {
+      font-size: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    p {
+      display: none;
+    }
+      
+    img {
+      border-radius: 3px;
     }
   }
 }
+
+

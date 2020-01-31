@@ -1,0 +1,38 @@
+.modal-outer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: rgba($dark-color, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.modal-outer.open {
+  transform: scale(1);
+  pointer-events: all;
+}
+
+.modal-outer.open .modal-inner {
+
+  h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+}
+
+.modal-inner {
+  background: $light-color;
+  border-radius: 2px;
+  max-height: 800px;
+  max-width: 350px;
+  padding: 1rem;
+
+  h3 {
+    text-align: center
+  }
+}
