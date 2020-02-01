@@ -4,6 +4,7 @@
 @import 'sections';
 @import 'modal';
 
+// styling
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,3 +29,6 @@ a {
 img {
   width: 100%;
 }
+// end/ styling
+
+@import 'responsive';

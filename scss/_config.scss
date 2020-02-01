@@ -3,3 +3,20 @@ $dark-color: #4d4646;
 $primary-color: #7fcd91;
 $secondary-color: #5b5656;
 $light-color: #f5eaea;
+
+// media queries mixins 
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content; 
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1000px) {
+    @content; 
+  }
+}
+@mixin widescreen {
+  @media screen and (min-width: 1300px) {
+    @content; 
+  }
+}
