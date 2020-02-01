@@ -1,0 +1,41 @@
+.modal-outer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: rgba($dark-color, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 2s;
+}
+
+.modal-outer.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-inner {
+  background: $light-color;
+  border-radius: 2px;
+  padding: 1rem;
+  max-width: 600px;
+  min-width: 400px;
+  transform: translateY(-200%);
+  transition: transform 2s;
+
+  h3 {
+    text-align: center
+  }
+}
+
+.modal-outer.open .modal-inner {
+  transform: translateY(0);
+  h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+}
