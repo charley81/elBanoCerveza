@@ -2,6 +2,7 @@ const buttons = document.querySelectorAll('button');
 const modalOuter = document.querySelector('.modal-outer');
 const modalInner = document.querySelector('.modal-inner');
 
+// handle card button click to open modal
 function handleCardButtonClick(event) {
   const button = event.target;
   const card = button.closest('.card');
@@ -20,32 +21,28 @@ function handleCardButtonClick(event) {
   modalOuter.classList.add('open');
 }
 
-// close modal
+// close modal function
 function closeModal() {
   modalOuter.classList.remove('open');
 }
 
-// handle click off
-function handleClickOff(event) {
+// listen for click off of modal to close it
+modalOuter.addEventListener('click', (event) => {
   const isOutSide = event.target.closest('.modal-inner');
   if (!isOutSide) {
     closeModal();
   }
-}
+});
 
-// listen for click off
-modalOuter.addEventListener('click', handleClickOff);
-
+// listen for card button click to display modal
 buttons.forEach(button => {
   button.addEventListener('click', handleCardButtonClick);
 });
 
-// escModal
-function escModal(event) {
+
+// listen for esc key to close modal
+window.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
     closeModal();
   }
-}
-
-// listen for esc key
-window.addEventListener('keydown', escModal);
+});
